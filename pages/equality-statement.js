@@ -1,16 +1,5 @@
-import Head from 'next/head'
+import Layout from '../components/layout';
 
-export default function EqualityStatement(){
-    return (
-        <div className="container">
-          <Head>
-            <title>Embolden Hub - Equality Statement</title>
-            <link rel="icon" href="/favicon.ico" />
-          </Head>
-    
-          <div>
-              Some PrivacyPolicy here 
-          </div>
-        </div>
-      )
+export default function EqualityStatment(){
+    return Layout(<></>, 'Equality Statement')
 }

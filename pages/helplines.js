@@ -1,16 +1,5 @@
-import Head from 'next/head'
+import Layout from '../components/layout';
 
 export default function HelpLines(){
-    return (
-        <div className="container">
-          <Head>
-            <title>Embolden Hub - Helplines</title>
-            <link rel="icon" href="/favicon.ico" />
-          </Head>
-    
-          <div>
-              Some PrivacyPolicy here 
-          </div>
-        </div>
-      )
+    return Layout(<></>, 'Helplines')
 }

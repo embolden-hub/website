@@ -1,16 +1,5 @@
-import Head from 'next/head'
+import Layout from '../components/layout';
 
 export default function CallsForHelp(){
-    return (
-        <div className="container">
-          <Head>
-            <title>Embolden Hub - Calls For Help</title>
-            <link rel="icon" href="/favicon.ico" />
-          </Head>
-    
-          <div>
-              Some PrivacyPolicy here 
-          </div>
-        </div>
-      )
+    return Layout(<></>, 'Calls For Help')
 }

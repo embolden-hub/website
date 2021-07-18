@@ -1,16 +1,5 @@
-import Head from 'next/head'
+import Layout from '../components/layout';
 
 export default function PrivacyPolicy(){
-    return (
-        <div className="container">
-          <Head>
-            <title>Embolden Hub - Privacy Policy</title>
-            <link rel="icon" href="/favicon.ico" />
-          </Head>
-    
-          <div>
-              Some PrivacyPolicy here 
-          </div>
-        </div>
-      )
+    return Layout(<></>, 'Privacy Policy')
 }

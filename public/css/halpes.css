@@ -3477,11 +3477,10 @@ h6 {
     left: 0;
     height: 100%;
     width: 100%;
-    filter: grayscale(0%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left bottom;
+    background:#1b1e2b;
+
 }
+
 
 .site-footer-bg:before {
     position: absolute;
@@ -3496,11 +3495,8 @@ h6 {
 .site-footer__top {
     position: relative;
     display: block;
+    padding-top: 10px;
 }
-
-
-
-
 
 .footer-widget__title {
     font-size: 22px;
@@ -3698,7 +3694,7 @@ h6 {
     display: block;
     background: #1b1e2b;
     z-index: 1;
-    margin-top: 87px;
+    margin-top: 10px;
 }
 
 .site-footer__bottom:before {
