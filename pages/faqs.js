@@ -168,7 +168,7 @@ The website is password protected to prevent identifying details about our locat
     const renderSection = (section) => {
         return <div className="accordion-item">
         <h2 className="accordion-header" id={`heading-${section.key}`}>
-            <button className="accordion-button" 
+            <button className="accordion-button collapsed" 
                     type="button" 
                     data-bs-toggle="collapse" 
                     data-bs-target={`#collapse-${section.key}`} 
