@@ -9,7 +9,7 @@ export default function WhereToFindUs(){
           </Head>
     
           <div>
-              Some PrivacyPolicy here 
+              Some where to find us here 
           </div>
         </div>
       )
