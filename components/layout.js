@@ -22,7 +22,7 @@ export default function Layout(contents, title){
             </button>
             <div className="collapse navbar-collapse" id="navbarCollapse">
               <ul className="navbar-nav me-auto mb-2 mb-md-0">
-                  {links.map(link => <li class="nav-item">
+                  {links.map(link => <li className="nav-item">
                     <Link href={link.page}>
                         <a className="nav-link active">{link.title}</a>
                     </Link>
@@ -36,7 +36,7 @@ export default function Layout(contents, title){
 
     const renderFooter = () => {
         return <footer style={{position:'fixed', bottom:'0', width:'100%'}} className="site-footer">
-                <div class="site-footer-bg">
+                <div className="site-footer-bg">
                     <div className="container">
                         <div className="site-footer__top">
                             <div className="row">
@@ -74,7 +74,7 @@ export default function Layout(contents, title){
         </Head>
         <div className="d-flex flex-column h-100">
         {renderHeader()}
-        <main className="flex-shrink-0">
+        <main className="flex-shrink-0" style={{margin:'65px 0'}}>
             <div className="container">
                 {contents}
             </div>
