@@ -1,17 +1,31 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import { useState } from 'react';
 
-export default function Layout(contents, title){
+const hashCode = function(s) {
+    var h = 0, l = s.length, i = 0;
+    if ( l > 0 )
+      while (i < l)
+        h = (h << 5) - h + s.charCodeAt(i++) | 0;
+    return h;
+  };
+
+export default function Layout(contents, title, passwordProtected){
+    const [passwordProvided, setPasswordProvided] = useState(false);
+    const [password, setPassword] = useState(undefined);
+    const check = () => setPasswordProvided(hashCode(password) === 1516355);
+    
     const links = [
         {title:'Home', page:'/'},
         {title:'Contact Us', page:'/contact-us'},
         {title:'FAQs', page:'/faqs'},
         {title:'Calls For Help', page:'/calls-for-help'}, 
+        {title:'Safety Freebies', page:'/safety-freebies'}
     ]
 
     const footerLinks = [
         {title:'Privacy Policy', page:'/privacy-policy'},
-        {title:'Safe Browsing', page: '/safe-browsing'}
+        {title:'Safe Browsing', page: '/safe-browsing'} 
     ]
 
     const renderQuickExit = () =>{
@@ -82,6 +96,20 @@ export default function Layout(contents, title){
             </footer>
     }
 
+    const enterPassword  = () => {
+        return <div className={'row'}>
+            <div className={'col-xl-12'} style={{alignItems:'center', justifyContent:'center', display:'flex', flex:'1 1 auto'}}>
+                <form>
+                    <div class="form-group">
+                        <label for="Password1">Password</label>
+                        <input type="password" class="form-control" id="Password1" placeholder="Password" onChange={evt => setPassword(evt.target.value)}/>
+                    </div>
+                    <button type="submit"  onClick={check} class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    }
+
     return <>
         <Head>
             <title>Embolden Hub - {title}</title>
@@ -96,7 +124,7 @@ export default function Layout(contents, title){
         {renderHeader()}
         <main className="flex-shrink-0" style={{margin:'65px 0'}}>
             <div className="container">
-                {contents}
+                {!passwordProtected || passwordProvided ? contents : enterPassword()}
             </div>
         </main>
         {renderFooter()}

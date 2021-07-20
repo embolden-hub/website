@@ -10,13 +10,13 @@ These are secured safely, subject to availability and an Embolden volunteer will
         <ul>
             <li>
                 <b>Personal Alarms</b>
-                These police approved alarms can attach to a handbag or key-ring or you may wish to hold this or keep it somewhere else close by. 
-When activated they let out an extremely loud, 140dB siren to help alert others and get attention. 
+                <p>These police approved alarms can attach to a handbag or key-ring or you may wish to hold this or keep it somewhere else close by. 
+When activated they let out an extremely loud, 140dB siren to help alert others and get attention.</p> 
             </li>
             <li>
                 <b>Window Alarms</b>
-                These can help deter forced entry of windows and a 110dB siren will wail if it detects attempted smashing by detecting vibration. 
-They are fixed to windows and doors using an adhesive pad. 
+                <p>These can help deter forced entry of windows and a 110dB siren will wail if it detects attempted smashing by detecting vibration. 
+They are fixed to windows and doors using an adhesive pad.</p>
             </li>
         </ul>
     </div>
