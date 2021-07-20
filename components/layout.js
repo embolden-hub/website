@@ -52,7 +52,7 @@ export default function Layout(contents, title, passwordProtected){
         return <header>
         <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">Fixed navbar</a>
+            <a className="navbar-brand" href="#"><img style={{width:'60px', height:'60px'}} src="/images/logo-only-purple.png"/></a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
