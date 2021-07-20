@@ -1,9 +1,9 @@
 import Layout from '../components/layout';
+import MainSection from '../components/mainSection';
 
 export default function SafetyFreebies(){
-    return Layout(<div className='row'>
-    <div className='col-xl-12'>
-        <h2>Safety Freebies</h2>
+    const title = "Safety Freebies";
+    return Layout(MainSection(<div className='col-xl-12'>
         <p>If you done left your partner and are in fear for your safety, we may be able to provide you with some resources to increase safety and help with feelings of anxiety. 
 These are secured safely, subject to availability and an Embolden volunteer will need to speak with you first and provide you with one.</p>
         <p>Some of the things we have:</p>
@@ -19,8 +19,7 @@ When activated they let out an extremely loud, 140dB siren to help alert others 
 They are fixed to windows and doors using an adhesive pad.</p>
             </li>
         </ul>
-    </div>
-</div>, 'Safety Freebies')
+    </div>, title), title)
 }
 
 

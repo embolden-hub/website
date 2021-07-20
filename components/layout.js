@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 const hashCode = function(s) {
     var h = 0, l = s.length, i = 0;
@@ -13,12 +15,13 @@ const hashCode = function(s) {
 export default function Layout(contents, title, passwordProtected){
     const [passwordProvided, setPasswordProvided] = useState(false);
     const [password, setPassword] = useState(undefined);
-    const check = () => setPasswordProvided(hashCode(password) === 1516355);
+    const check = () => password !== undefined ? setPasswordProvided(hashCode(password) === 1516355) : null;
     
     const links = [
         {title:'Home', page:'/'},
         {title:'Contact Us', page:'/contact-us'},
         {title:'FAQs', page:'/faqs'},
+        {title:'Claires Law', page:'/claires-law'},
         {title:'Calls For Help', page:'/calls-for-help'}, 
         {title:'Safety Freebies', page:'/safety-freebies'}
     ]
@@ -61,6 +64,16 @@ export default function Layout(contents, title, passwordProtected){
                     </Link>
                   </li>)}
               </ul>
+              <div style={{margin:'20px'}}>
+                <Link href={'/how-you-can-help'}>
+                    <a className="main-menu__donate-btn" style={{fontSize:'12px', display:'flex', alignItems:'center', justifyContent:'center'}}>
+                        <div style={{height:'30px', width:'30px', marginRight:'10px'}}>
+                            <FontAwesomeIcon  size={'xs'} icon={faHeart} />
+                        </div>
+                        How you can help</a>           
+                </Link>
+              </div>
+            
             </div>
           </div>
         </nav>
@@ -100,11 +113,11 @@ export default function Layout(contents, title, passwordProtected){
         return <div className={'row'}>
             <div className={'col-xl-12'} style={{alignItems:'center', justifyContent:'center', display:'flex', flex:'1 1 auto'}}>
                 <form>
-                    <div class="form-group">
-                        <label for="Password1">Password</label>
-                        <input type="password" class="form-control" id="Password1" placeholder="Password" onChange={evt => setPassword(evt.target.value)}/>
+                    <div className="form-group">
+                        <label>Password</label>
+                        <input type="password" className="form-control" id="Password1" placeholder="Password" onChange={evt => setPassword(evt.target.value)}/>
                     </div>
-                    <button type="submit"  onClick={check} class="btn btn-primary">Submit</button>
+                    <a onClick={check} className="thm-btn"><i className="fas fa-arrow-circle-right"></i>Submit</a>
                 </form>
             </div>
         </div>
@@ -123,7 +136,7 @@ export default function Layout(contents, title, passwordProtected){
         {renderQuickExit()}    
         {renderHeader()}
         <main className="flex-shrink-0" style={{margin:'65px 0'}}>
-            <div className="container">
+            <div className="container" style={{padding: '70px 0 100px'}}>
                 {!passwordProtected || passwordProvided ? contents : enterPassword()}
             </div>
         </main>

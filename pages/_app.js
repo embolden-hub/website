@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../public/css/halpes.css';
 import '../public/css/halpes-responsive.css';
 import '../public/css/quick-exit.css';
+import '../public/css/halpes-fonts.css'
 import { useEffect } from 'react';
 
 export default function MyApp({ Component, pageProps }) {

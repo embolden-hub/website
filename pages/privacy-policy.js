@@ -1,11 +1,10 @@
 import Layout from '../components/layout';
+import MainSection from '../components/mainSection';
 
 export default function PrivacyPolicy(){
-    return Layout(
-        <div className='row'>
-            <div className='col-xl-12'>
-                <h2>Privacy Policy</h2>
-                <h3>Who we are</h3>
+    const title = "Privacy Policy";
+    return Layout(MainSection(<div className='col-xl-12'>
+        <h3>Who we are</h3>
                 <p>
                 Embolden is a charitable unincorporated association in England. We are not a registered company or charity. Our work is purely voluntary and we do not profit. 
 Information.
@@ -45,19 +44,5 @@ There are some circumstances where we may need to act and breach this confidenti
                 <p>You have the right to access any data held about you. There is no cost for this service but to access this you must submit a request in writing along with evidence of your identity. </p>
                 <p>If you would like to withdraw consent to us having your information and would like this deleted, we can do this providing there is no lawful reason why it should be kept. </p>
                 <p>Please email <a href="mailto:support@embolden-hub.org.uk">support@embolden-hub.org.uk</a>. if you would like to submit a request. </p>
-            </div>
-        </div>,
-    
-    'Privacy Policy')
+    </div>, title), title)
 }
-
-
-
-
-
-
-
-
-
-
-

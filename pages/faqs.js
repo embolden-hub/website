@@ -1,4 +1,5 @@
 import Layout from '../components/layout';
+import MainSection from '../components/mainSection';
 
 export default function FAQS(){
     const sections = [
@@ -204,3 +205,4 @@ The website is password protected to prevent identifying details about our locat
         </div>
     </>, 'FAQs')
 }
+

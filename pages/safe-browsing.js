@@ -1,10 +1,10 @@
 import Layout from '../components/layout';
+import MainSection from '../components/mainSection';
 
 export default function SafeBrowsing(){
-    return Layout(<div className='row'>
-            <div className='col-xl-12'>
-                <h2>Safe Browsing </h2>
-                <p>Please take a look at the below tips on how to safely browse this and other sites of this nature</p>
+    const title = "Safe Browsing";
+    return Layout(MainSection(<div className='col-xl-12'>
+            <p>Please take a look at the below tips on how to safely browse this and other sites of this nature</p>
                 <h3>Passwords</h3>
                 <ol>
                     <li>The first page you see will say ‘Embolden’ only. This is to let you know that you have reached the correct page. It will not be clear from this which site you are entering.</li>
@@ -51,7 +51,5 @@ If you do not want to use private browsing, you will need to delete your browsin
                     <b>You could use your local library to browse our site and the sites of other organisations if you need to. It may be useful to create a new email address at the library that you only access on a public computer.
                     </b>
                 </p>    
-            </div>
-        </div>,
- 'Safe Browsing')
+    </div>, title), title)
 }
