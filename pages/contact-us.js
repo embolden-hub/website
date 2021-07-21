@@ -36,31 +36,30 @@ export default function ContactUs(){
         </div>
         <div className="col-xl-6 col-lg-6">
         <div className="contact-page__form">
-                    <form action="assets/inc/sendemail.php" className="contact-page__main-form contact-form-validated">
+            <form action="https://mailthis.to/Embolden-Hub" encType="multipart/form-data" method="POST"  className="contact-page__main-form contact-form-validated">
+                <div className="row">
+                    <div className="col-xl-12">
+                        <div className="contact-page__input-box">
+                                <input type="text" placeholder="Your name" name="name"/>
+                        </div>
+                    </div>
+                </div>
                         <div className="row">
                             <div className="col-xl-12">
                                 <div className="contact-page__input-box">
-                                    <input type="text" placeholder="Your name" name="name"/>
+                                    <input type="email" placeholder="Email address" name="_replyto"/>
                                 </div>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-xl-12">
-                                <div className="contact-page__input-box">
-                                    <input type="email" placeholder="Email address" name="email"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-xl-12">
-                                <div className="contact-page__input-box">
-                                    <input type="text" placeholder="Phone Number" name="phone"/>
-                                </div>
-                            </div>
                             <div className="col-xl-12">
                                 <div className="contact-page__input-box">
                                     <textarea name="message" placeholder="Write message"></textarea>
                                 </div>
+                                <input type="hidden" name="_subject" value="Contact form submitted"/>
+                                <input type="hidden" name="_after" value="https://embolden-hub.org.uk/confirm-email-sent"/>
+                                <input type="hidden" name="_honeypot" value=""/>
+                                <input type="hidden" name="_confirmation" value=""/>
                                 <button type="submit" className="thm-btn contact-page__btn"><i className="fas fa-arrow-circle-right"></i>Send a Message</button>
                             </div>
                         </div>

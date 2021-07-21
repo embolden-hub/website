@@ -23,12 +23,14 @@ export default function Layout(contents, title, passwordProtected){
         {title:'FAQs', page:'/faqs'},
         {title:'Claires Law', page:'/claires-law'},
         {title:'Calls For Help', page:'/calls-for-help'}, 
-        {title:'Safety Freebies', page:'/safety-freebies'}
+        {title:'Safety Freebies', page:'/safety-freebies'}, 
+        {title:'Helplines', page:'/helplines'}
     ]
 
     const footerLinks = [
         {title:'Privacy Policy', page:'/privacy-policy'},
-        {title:'Safe Browsing', page: '/safe-browsing'} 
+        {title:'Safe Browsing', page: '/safe-browsing'}, 
+        {title:'Equality Statement', page:'/equality-statement'}
     ]
 
     const renderQuickExit = () =>{
@@ -109,18 +111,29 @@ export default function Layout(contents, title, passwordProtected){
             </footer>
     }
 
+
+    const handleKeyDown = (e)  => {
+        if (e.key === 'Enter') {check()}
+    }
+
     const enterPassword  = () => {
-        return <div className={'row'}>
-            <div className={'col-xl-12'} style={{alignItems:'center', justifyContent:'center', display:'flex', flex:'1 1 auto'}}>
-                <form>
-                    <div className="form-group">
-                        <label>Password</label>
-                        <input type="password" className="form-control" id="Password1" placeholder="Password" onChange={evt => setPassword(evt.target.value)}/>
+        return <div className="row">
+                    <div className="col-xl-12" style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
+                        <img style={{height:'15em', width:'100%'}} src={'images/logo-purple-no-back.svg'}></img>
                     </div>
-                    <a onClick={check} className="thm-btn"><i className="fas fa-arrow-circle-right"></i>Submit</a>
-                </form>
-            </div>
-        </div>
+                    <div className='col-xl-12' style={{display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column'}}>
+                        <h2 style={{margin:'10px'}}>Password</h2>
+                        <input
+                        style={{margin:'10px'}} 
+                        type="password" 
+                        className="form-control" 
+                        id="Password1" 
+                        placeholder="Password" 
+                        onKeyDown={handleKeyDown}
+                        onChange={evt => setPassword(evt.target.value)}/>
+                        <a onClick={check} className="thm-btn"><i className="fas fa-arrow-circle-right"></i>Submit</a>
+                    </div>
+              </div>
     }
 
     return <>

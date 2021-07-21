@@ -13,11 +13,11 @@
     transform-origin:right center;
     transition:transform 10ms;
     z-index:99999;
-    background:purple;
+    background:#8B17D2;
     color:white;
     border:0.2em solid white;
     border-right:none;
-    box-shadow:0 0 0 0.1em purple,2px 2px 5px 0.1em rgba(0,0,0,0.5)
+    box-shadow:0 0 0 0.1em #8B17D2,2px 2px 5px 0.1em rgba(0,0,0,0.5)
 }
     
 #quick-exit a{color:white}
