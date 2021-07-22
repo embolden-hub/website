@@ -20,7 +20,9 @@ export default function Layout(contents, title, passwordProtected){
     const links = [
         {title:'Home', page:'/'},
         {title:'Contact Us', page:'/contact-us'},
+        {title:'Where To Find Us', page:'/where-to-find-us'},
         {title:'FAQs', page:'/faqs'},
+        {title:'Explore Options', page:'/explore-options'},
         {title:'Claires Law', page:'/claires-law'},
         {title:'Calls For Help', page:'/calls-for-help'}, 
         {title:'Safety Freebies', page:'/safety-freebies'}, 
