@@ -1,9 +1,8 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import {withRouter} from 'next/router'
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faLaughWink } from '@fortawesome/free-solid-svg-icons';
 
 const hashCode = function(s) {
     var h = 0, l = s.length, i = 0;
@@ -13,22 +12,23 @@ const hashCode = function(s) {
     return h;
   };
 
-export default function Layout(contents, title, passwordProtected){
-    const [passwordProvided, setPasswordProvided] = useState(false);
+export default function Layout(contents, title, passwordProvided, setPasswordProvided){
     const [password, setPassword] = useState(undefined);
     const check = () => password !== undefined ? setPasswordProvided(hashCode(password) === 1516355) : null;
     
     const links = [
-        {title:'Home', page:'/'},
-        {title:'Contact', page:'/contact-us'},
-        {title:'Find Us', page:'/where-to-find-us'},
-        {title:'FAQs', page:'/faqs'},
-        {title:'Explore Options', page:'/explore-options'},
-        {title:'Claires Law', page:'/claires-law'},
-        {title:'Calls For Help', page:'/calls-for-help'}, 
-        {title:'Safety Resources', page:'/safety-resources'}, 
-        {title:'Helplines', page:'/helplines'}
+        {title:'Home', page:'/', protected:true},
+        {title:'Contact', page:'/contact-us',protected:true},
+        {title:'Find Us', page:'/where-to-find-us', protected:true},
+        {title:'FAQs', page:'/faqs', protected:true},
+        {title:'Explore Options', page:'/explore-options', protected:true},
+        {title:'Claires Law', page:'/claires-law', protected:true},
+        {title:'Calls For Help', page:'/calls-for-help', protected:true}, 
+        {title:'Safety Resources', page:'/safety-resources', protected:true}, 
+        {title:'Helplines', page:'/helplines', protected:false}
     ]
+
+    const currentLink = links.find(link => link.title === title);
 
     const footerLinks = [
         {title:'Privacy Policy', page:'/privacy-policy'},
@@ -56,13 +56,13 @@ export default function Layout(contents, title, passwordProtected){
         return <header>
         <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#"><img style={{width:'60px', height:'60px'}} src="/images/logo-only-purple.png"/></a>
+            <a className="navbar-brand" href="/"><img style={{width:'60px', height:'60px'}} src="/images/logo-only-purple.png"/></a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarCollapse">
               <ul className="navbar-nav me-auto mb-2 mb-md-0">
-                  {links.map(link => <li className="nav-item">
+                  {links.filter(link => passwordProvided || !link.protected).map(link => <li className="nav-item">
                     <Link href={link.page}>
                         <a className="nav-link active">{link.title}</a>
                     </Link>
@@ -152,7 +152,7 @@ export default function Layout(contents, title, passwordProtected){
         {renderHeader()}
         <main className="flex-shrink-0" style={{margin:'65px 0'}}>
             <div className="container" style={{padding: '70px 0 100px'}}>
-                {!passwordProtected || passwordProvided ? contents : enterPassword()}
+                {(currentLink && !currentLink.protected) || passwordProvided ? contents : enterPassword()}
             </div>
         </main>
         {renderFooter()}

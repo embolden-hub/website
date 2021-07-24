@@ -2,7 +2,7 @@ import Layout from '../components/layout';
 import MainSection from '../components/mainSection';
 import Link from 'next/link';
 
-export default function WhereToFindUs(){
+export default function WhereToFindUs({passwordProvided,setPasswordProvided}){
     const title = "Find Us";
     return Layout(MainSection(<div className='col-xl-12'>
         <div className='row'>
@@ -26,5 +26,5 @@ export default function WhereToFindUs(){
                 <p>Please see the ‘Helplines’ page for information on helplines that you can speak to if we are not open.</p>
             </div>
         </div>
-    </div>, title), title, true)
+    </div>, title), title, passwordProvided, setPasswordProvided)
 }

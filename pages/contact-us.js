@@ -1,7 +1,7 @@
 import Layout from '../components/layout';
 import MainSection  from '../components/mainSection';
 
-export default function ContactUs(){
+export default function ContactUs({passwordProvided,setPasswordProvided}){
     const title = 'Contact'
 
     return Layout(MainSection(<div className='row'>
@@ -60,5 +60,5 @@ export default function ContactUs(){
                     </form>
                 </div>
         </div>
-    </div>, title), title)   
+    </div>, title), title, passwordProvided, setPasswordProvided)   
 }

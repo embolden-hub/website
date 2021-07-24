@@ -1,7 +1,7 @@
 import Layout from '../components/layout';
 import MainSection from '../components/mainSection';
 
-export default function HowYouCanHelp(){
+export default function HowYouCanHelp({passwordProvided,setPasswordProvided}){
     const title = 'How Can You Help'; 
 
     return Layout(MainSection(<>
@@ -19,5 +19,6 @@ Spread the word about Embolden by telling your female friends, family and co-wor
 Please remember that to keep women, children and staff and volunteers safe, it’s really important that we spread awareness carefully and keep Embolden’s location as discrete as possible. 
 For this reason, we do not have any social media and this website is password protected.</p>
         </div>
-    </>, title),title)
+    </>, title), title, passwordProvided, setPasswordProvided)
 }
+

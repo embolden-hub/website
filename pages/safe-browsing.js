@@ -1,7 +1,7 @@
 import Layout from '../components/layout';
 import MainSection from '../components/mainSection';
 
-export default function SafeBrowsing(){
+export default function SafeBrowsing({passwordProvided,setPasswordProvided}){
     const title = "Safe Browsing";
     return Layout(MainSection(<div className='col-xl-12'>
             <p>Please take a look at the below tips on how to safely browse this and other sites of this nature</p>
@@ -51,5 +51,5 @@ If you do not want to use private browsing, you will need to delete your browsin
                     <b>You could use your local library to browse our site and the sites of other organisations if you need to. It may be useful to create a new email address at the library that you only access on a public computer.
                     </b>
                 </p>    
-    </div>, title), title)
+    </div>, title), title,  passwordProvided, setPasswordProvided)
 }

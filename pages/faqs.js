@@ -1,7 +1,7 @@
 import Layout from '../components/layout';
 import MainSection from '../components/mainSection';
 
-export default function FAQS(){
+export default function FAQS({passwordProvided,setPasswordProvided}){
     const sections = [
         {
             title:'What do I say when I arrive and who do I ask?', 
@@ -192,14 +192,11 @@ The website is password protected to prevent identifying details about our locat
         </div>
     }
 
-    return Layout(<>
-        <div className='row'>
-            <div className='col-xl-12'>
-                <h2>Frequently Asked Questions </h2>
-                <p>If you have a question that is not covered here, please feel free to email on support@embolden-hub.org.uk</p>
-                {renderAccordian()}
-            </div>
-        </div>
-    </>, 'FAQs')
+    const title = 'FAQs'; 
+
+    return Layout(MainSection(<div className='col-xl-12'>
+        <p>If you have a question that is not covered here, please feel free to email on support@embolden-hub.org.uk</p>
+        {renderAccordian()}
+    </div>, title), title,  passwordProvided, setPasswordProvided)
 }
 

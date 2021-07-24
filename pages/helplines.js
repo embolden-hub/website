@@ -1,7 +1,7 @@
 import Layout from '../components/layout';
 import MainSection from '../components/mainSection';
 
-export default function HelpLines(){
+export default function HelpLines({passwordProvided,setPasswordProvided}){
     const contacts = [
         {
             title:'Aylesbury Women’s Aid', 
@@ -119,7 +119,8 @@ export default function HelpLines(){
        
     }
 
+    const title = 'Helplines';
     return Layout(MainSection(<div className='row'>
         {contacts.map(renderCard)}
-    </div>, 'Helplines'), 'Helplines')
+    </div>, title), title, passwordProvided, setPasswordProvided)
 }

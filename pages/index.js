@@ -1,6 +1,6 @@
 import Layout from '../components/layout';
 
-export default function Home(){
+export default function Home({passwordProvided,setPasswordProvided}){
     return Layout(<div className="row">
         <div className="col-xl-12" style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
             <img style={{height:'15em', width:'100%'}}  src={'images/logo-purple-no-back.svg'}></img>
@@ -21,7 +21,7 @@ export default function Home(){
             <p>We believe that if you don’t get a problem from its roots, it will continue to grow. We empathise with the struggle that women have endured from patriarchy, sexism and male violence toward women and girls.</p>
             <p>We strive to make a difference on a local level and will be implementing a plan in the near future, starting at the roots.</p>
         </div>
-    </div>, 'Home', true)
+    </div>, 'Home', passwordProvided, setPasswordProvided)
 }
 
 

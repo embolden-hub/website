@@ -1,7 +1,7 @@
 import Layout from '../components/layout';
 import MainSection from '../components/mainSection';
 
-export default function CallsForHelp(){
+export default function CallsForHelp({passwordProvided, setPasswordProvided}){
     const title = 'Calls For Help';
     return Layout(MainSection(
         <div className='col-xl-12'>
@@ -15,7 +15,7 @@ export default function CallsForHelp(){
             </ul>
         </div>
         , title)
-        , title)
+        , title, passwordProvided, setPasswordProvided)
 }
 
 
