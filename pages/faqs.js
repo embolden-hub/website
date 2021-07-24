@@ -20,11 +20,9 @@ export default function FAQS(){
             key:'2',
             content:
             <div>
-                <p>If we could have any super-power (besides ending domestic abuse and violence once and for all!) it would definitely be the ability to double in size!</p>
-                <p>Unfortunately, our main hub room is only big enough to support one woman at a time. Luckily, if this room is occupied, a member of staff can show you to a second room! This won’t be quite as ‘Embolden’ but it’s a safe place to read and make calls.</p>
-                <p>Alternatively, the library has computers that can be used for accessing our website and other organisations, including online chat and email services.</p>
-                <p>If you would like to make a call outside, you may let a member of staff know and they can show you to the small courtyard.</p>
-                <p>Lastly (because we believe in choices!) we can supply you with a basic phone to use off-site for call-making. These phones are pre-loaded with helpline contacts and so only freephone numbers will work. Please ensure this is returned the same day, before close, ready to help somebody else!</p>
+                <p>If we could have any super-power (besides ending violence against women and girls once and for all!) it would definitely be to double in size!</p>
+                <p>Our main hub room is a bit of a squeeze, so is only big enough for one survivor at a time. Luckily, we can show you to a second room if this room is occupied. It won’t be quite as ‘Embolden’ but you’ll still have access to all the same resources.</p>
+                <p>If our hub is engaged, or both rooms engaged, you may also choose to use a computer or take one of our phones outside to the courtyard or off-site. We believe in choices!</p>
             </div>
         }, 
         {
@@ -41,10 +39,9 @@ export default function FAQS(){
             key:'4',
             content:
             <div>
-                <p>We recommend that you check in at Embolden using our visitors sign in book. It can be helpful to record your visit, especially if you want to refer to it later.</p>
-                <p>Security and confidentiality are as important to us, as they are you and so we have a special process to protect your details.</p>
-                <p>When you arrive at Embolden, if an Embolden support volunteer is present, we will ask you if you would like to put an entry into our sign in book. We will place this in a secure lockable safe so others who sign in cannot see your entry.</p>
-                <p>If the hub is- unwomaned 😉 we have a fancy (yet sturdy!) lockable post box so that you can slip your own sign in entry in. These will be checked multiple times a week and deposited into our safe.</p> 
+                <p>It is possible to use our our hub anonymously if you wish, but we strongly suggest signing in as it can be helpful for you to record your visit.</p>
+                <p>We have a special process to keep all your details safe. When you visit Embolden, an Emboldener will ask you if you would like to sign in. All entries will be placed in a lockable box for safe-keeping. </p>
+                <p>In the event that our hub is unwomaned, we have a fancy (yet secure!) post box. If you wish to sign yourself in, please complete the sign in form and post it through. Our post box will be checked at the first opportunity and any contents transferred for safe keeping.</p>
             </div>
         },
         {

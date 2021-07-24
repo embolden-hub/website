@@ -2,39 +2,33 @@ import Layout from '../components/layout';
 import MainSection  from '../components/mainSection';
 
 export default function ContactUs(){
-    const renderEmailContact = () => {}
-    const title = 'Contact Us'
+    const title = 'Contact'
 
     return Layout(MainSection(<div className='row'>
-         <p>If you would like to contact Embolden, please fill in the form below. Alternatively there is also an email address you can email directly.</p>
-         <p>When you email us, please let us know: The safest way to contact you (phone/email), Safe days and times to contact you, If you would like to arrange to meet at Embolden but it is not safe for us to contact you, please let us know which day/time you will be at Embolden (Please check library opening hours). Please give us a minimum of 36 hours notice. In most cases, we will be able to accommodate this but there may be times this is not possible,
-            If we call you and you would like us to use a code word or question to check that it is safe to call, please advise of which code word or question you would like and indicate which response indicates that it is not safe to talk at the moment. </p>
-         <b>Remember to delete emails if you are concerned that your communications may be accessed.</b>
-         <div className="col-xl-6 col-lg-6">
-                <div className="contact-page__contact-info">
-                        <ul className="contact-page__contact-list list-unstyled">
-                            <li>
-                                <div className="icon">
-                                    <span className="icon-chat"></span>
-                                </div>
-                                <div className="text">
-                                    <p>Call Anytime</p>
-                                    <a href="tel:92 666 888 0000">92 666 888 0000</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="icon">
-                                    <span className="icon-message"></span>
-                                </div>
-                                <div className="text">
-                                    <p>Send Email</p>
-                                    <a href='mailto:support@embolden-hub.org.uk'>support@embolden-hub.org.uk</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-        </div>
-        <div className="col-xl-6 col-lg-6">
+        <div className={'col-xl-12'}>
+        <p>Please fill in the contact form below, or email us directly via email. We respond to emails between 9am-6pm Mon-Fri.</p>
+        <p>If you would prefer to call a helpline you can visit our hub or see our helplines page.</p>
+        <p>When you contact us, let us know:</p>
+        <ul>
+            <li>Safe ways we may contact you (a phone number or email)</li>
+            <li>Safe times to contact you (eg; between 10am-4pm)</li>
+        </ul>
+        <p>Embolden is a walk in service and an Emboldener will usually be present. There may be times that we are ‘un-womaned’ as we are a small voluntary service. If you would like to guarantee in-person support, please contact us in advance if it is possible and safe to do this.</p>  
+        <p><b>Be aware that we may fall into your junk mail.</b></p>  
+        <p><b>To cover your tracks, delete sent emails, permanently delete ‘deleted’ emails and remember to delete any drafts. You may want to delete messages in your inbox if you no longer need them.</b></p>
+        <ul className="contact-page__contact-list list-unstyled">
+            <li>
+                <div className="icon">
+                    <span className="icon-message"></span>
+                </div>
+                <div className="text">
+                    <p>Send Email</p>
+                    <a href='mailto:support@embolden-hub.org.uk'>support@embolden-hub.org.uk</a>
+                </div>
+            </li>
+        </ul>
+        </div> 
+        <div className="col-xl-12">
         <div className="contact-page__form">
             <form action="https://mailthis.to/Embolden-Hub" encType="multipart/form-data" method="POST"  className="contact-page__main-form contact-form-validated">
                 <div className="row">

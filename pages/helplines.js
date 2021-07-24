@@ -8,19 +8,18 @@ export default function HelpLines(){
             website:'www.aylesburywomensaid.org.uk',
             telephone: '01296437777',
             email: 'helpline@womensaid.org.uk', 
-            otherDetails:<div>Helpine open 10am - 4pm, Monday to Friday except bank holidays, live chat available on womensaid.org.uk website</div>
+            otherDetails:<div>Helpine open 10am - 4pm, Monday to Friday except bank holidays</div>
         }, 
         {
             title:'Refuge', 
             website:'www.refuge.org.uk',
             telephone: '08082000247',
-            otherDetails:<div>Online chat and contact form for Refuge National Domestic Abuse Helpline available on nationaldahelpline.org.uk website</div>
+            otherDetails:<div>Online chat and contact form available</div>
         },
         {
             title:'Victims First',
             website:'www.victimsfirst.org.uk',
             telephone:'03001234148', 
-            otherDetails:<div>Online chat and contact form for Victims First available on victims-first.org.uk website</div>
         },
         {
             title:'Aylesbury Vale & Milton Keynes Sexual Assault & Abuse Support Service (AVMK SAASS)', 
@@ -31,6 +30,7 @@ export default function HelpLines(){
         {
             title:'Forced Marriage Unit', 
             telephone: '0207 008 0151',
+            emai:'fmu@fco.gov.uk'
         },
         {
             title:'Karma Nirvana (Supporting those worried about honour based abuse and forced marriage)', 
@@ -40,7 +40,7 @@ export default function HelpLines(){
             otherDetails:<div>Helpline open Mon - Fri 9.00am - 5.00pm</div>
         }, 
         {
-            title:'Galop (LGBT) - National LGBT+ Domestic Abuse Helpline', 
+            title:'Galop (LGBT)', 
             website:'www.galop.org.uk',
             telephone: '0800 999 5428',
             email: 'help@galop.org.uk', 
@@ -77,18 +77,16 @@ export default function HelpLines(){
         },
         {
             
-            title:'Domestic Violence Assist (Non-molestation orders, prohibited steps orders and occupation orders)',
+            title:'Domestic Violence Assist',
             website: 'https://www.dvassist.org.uk/police-referral-form',
-            telephone: '0800 195 8699'
+            telephone: '0800 195 8699',
+            otherDetails:<div>Non-molestation orders, prohibited steps orders and occupation orders</div>
         },
         {
             title:' LIZ GOUGH – ENCOUNTER COMPASSION',
             website: 'ww.encountercompassion.org',
             otherDetails:<div>
-                  Local Private Counsellor and Psychotherapist (Free initial session followed by £45 per session, or package sessions)
-            Liz Gough is a local private counsellor and psychotherapist, she describes herself as: 
-            “A registered member of the British Association of Counselling & Psychotherapy (BACP).  Formerly a midwife, and group facilitator with survivors of modern slavery, I have years of experience supporting women.  I work with anxiety, depression, trauma, and a variety of other issues. My areas of special interest are birth trauma, general trauma, and sexual assault or abuse.” 
-            Liz can be contacted through her website contact form
+                  Former midwife, and now counsellor and psychotherapist experienced in trauma, sexual assault, abuse, modern slavery and other areas
             </div>
 
         }

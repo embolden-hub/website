@@ -6,10 +6,6 @@ export default function PrivacyPolicy(){
     return Layout(MainSection(<div className='col-xl-12'>
         <h3>Who we are</h3>
                 <p>
-                Embolden is a charitable unincorporated association in England. We are not a registered company or charity. Our work is purely voluntary and we do not profit. 
-Information.
-                </p>
-                <p>
                 Embolden Support Hub will only collect and store information that you have chosen to provide via the contact form, or via email.
 Where a volunteer application is deemed unsuitable, the application will be permanently deleted and no longer obtainable.
 Applications that are characteristically suitable for future vacancies will be deleted after a period of 3 months, after which the volunteer will need to re-express interest by completing a further application. 

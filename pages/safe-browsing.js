@@ -17,8 +17,8 @@ export default function SafeBrowsing(){
                 </ol>
                 <h3>Quick Exit</h3>
                 <ol>
-                    <li>On each page of our website there is a quick exit button that diverts to google should you need to exit the page quickly.</li>
-                    <li>It may be helpful to have in mind what you will type in the search bar should you need to use the quick exit feature.</li>
+                    <li>On each page of our website there is a quick exit button that diverts to Facebook, Twitter, Google or Youtube should you need to exit the page quickly.</li>
+                    <li>It may be helpful to have in mind which you would click on should you need to exit quickly</li>
                  </ol>
                  <h3>Private Browsing and Browsing History </h3>
                  <p>In internet explorer, safari, opera, firefox and chrome, you have the option to turn on ‘private browsing’ which means there will be no web history or web cache to delete. We recommend doing this where possible in case you do not have the opportunity to delete history or you forget.

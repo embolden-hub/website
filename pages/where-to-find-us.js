@@ -3,7 +3,7 @@ import MainSection from '../components/mainSection';
 import Link from 'next/link';
 
 export default function WhereToFindUs(){
-    const title = "Where To Find Us";
+    const title = "Find Us";
     return Layout(MainSection(<div className='col-xl-12'>
         <div className='row'>
             <div className='col-xl-6'>

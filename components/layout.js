@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import {withRouter} from 'next/router'
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
@@ -19,20 +20,19 @@ export default function Layout(contents, title, passwordProtected){
     
     const links = [
         {title:'Home', page:'/'},
-        {title:'Contact Us', page:'/contact-us'},
-        {title:'Where To Find Us', page:'/where-to-find-us'},
+        {title:'Contact', page:'/contact-us'},
+        {title:'Find Us', page:'/where-to-find-us'},
         {title:'FAQs', page:'/faqs'},
         {title:'Explore Options', page:'/explore-options'},
         {title:'Claires Law', page:'/claires-law'},
         {title:'Calls For Help', page:'/calls-for-help'}, 
-        {title:'Safety Freebies', page:'/safety-freebies'}, 
+        {title:'Safety Resources', page:'/safety-resources'}, 
         {title:'Helplines', page:'/helplines'}
     ]
 
     const footerLinks = [
         {title:'Privacy Policy', page:'/privacy-policy'},
         {title:'Safe Browsing', page: '/safe-browsing'}, 
-        {title:'Equality Statement', page:'/equality-statement'}
     ]
 
     const renderQuickExit = () =>{
@@ -68,7 +68,7 @@ export default function Layout(contents, title, passwordProtected){
                     </Link>
                   </li>)}
               </ul>
-              <div style={{margin:'20px'}}>
+              <div style={{margin:'0 20px'}}>
                 <Link href={'/how-you-can-help'}>
                     <a className="main-menu__donate-btn" style={{fontSize:'12px', display:'flex', alignItems:'center', justifyContent:'center'}}>
                         <div style={{height:'30px', width:'30px', marginRight:'10px'}}>
