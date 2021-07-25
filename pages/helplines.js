@@ -95,16 +95,20 @@ export default function HelpLines({passwordProvided,setPasswordProvided}){
 
     const renderItem = (key, value) => { 
         const getHref = () => key === 'Email' ? `mailto:${value}`: key === 'Telephone' ? `tel:${value}` : value;
-        return <li>
-                    <div className="left"> <p>{key}:</p> </div>
-                    <div className="right"><h5><a href={getHref()}>{value}</a></h5></div>
-              </li>
+        return <div className={'row'}>
+                    <div className="col-xl-4">
+                        {key}
+                    </div>
+                    <div className="col-xl-8">
+                        <h5 style={{fontWeight:'bold'}}><a href={getHref()}>{value}</a></h5>
+                    </div>
+              </div>
     }
 
     const renderCard = (item) => { 
        return  <div key={item.title} className={'col-xl-6'}>
            <div className="event-details__right-sidebar" 
-                    style={{margin:'5px', minHeight:'330px', display:'flex', justifyContent:'space-between', flexDirection:'column'}}>
+                    style={{margin:'5px', minHeight:'330px', display:'flex', flexDirection:'column'}}>
                     <div className="event-details__right-sidebar-title">
                         <h4>{item.title}</h4>
                     </div>
@@ -120,7 +124,7 @@ export default function HelpLines({passwordProvided,setPasswordProvided}){
     }
 
     const title = 'Helplines';
-    return Layout(MainSection(<div className='row'>
+    return Layout(MainSection(<>
         {contacts.map(renderCard)}
-    </div>, title), title, passwordProvided, setPasswordProvided)
+    </>, title), title, passwordProvided, setPasswordProvided)
 }

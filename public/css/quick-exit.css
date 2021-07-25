@@ -1,7 +1,10 @@
+/* Medium screen  */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+ 
 #quick-exit{
     position:fixed;
     right:0;
-    top:20%;
+    bottom: 15%;
     font-size:200%;
     line-height:1;
     padding:.2em .2em .2em .7em;
@@ -19,6 +22,89 @@
     border-right:none;
     box-shadow:0 0 0 0.1em #8B17D2,2px 2px 5px 0.1em rgba(0,0,0,0.5)
 }
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+   
+#quick-exit{
+    position:fixed;
+    right:0;
+    bottom: 10%;
+    font-size:200%;
+    line-height:1;
+    padding:.2em .2em .2em .7em;
+    white-space:nowrap;
+    border-radius:1.7em 0 0 1.7em;
+    cursor:pointer;
+    font-family:sans-serif;
+    font-weight:bold;
+    transform-origin:right center;
+    transition:transform 10ms;
+    z-index:99999;
+    background:#8B17D2;
+    color:white;
+    border:0.2em solid white;
+    border-right:none;
+    box-shadow:0 0 0 0.1em #8B17D2,2px 2px 5px 0.1em rgba(0,0,0,0.5)
+} 
+
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    #quick-exit{
+        position:fixed;
+        right:0;
+        bottom: 1%;
+        font-size:150%;
+        line-height:1;
+        white-space:nowrap;
+        border-radius:1.7em 0 0 1.7em;
+        cursor:pointer;
+        font-family:sans-serif;
+        font-weight:bold;
+        transform-origin:right center;
+        transition:transform 10ms;
+        z-index:99999;
+        background:#8B17D2;
+        color:white;
+        border:0.2em solid white;
+        border-right:none;
+        box-shadow:0 0 0 0.1em #8B17D2,2px 2px 5px 0.1em rgba(0,0,0,0.5)
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    #quick-exit{
+        position:fixed;
+        right:0;
+        bottom: 15%;
+        font-size:200%;
+        line-height:1;
+        padding:.2em .2em .2em .7em;
+        white-space:nowrap;
+        border-radius:1.7em 0 0 1.7em;
+        cursor:pointer;
+        font-family:sans-serif;
+        font-weight:bold;
+        transform-origin:right center;
+        transition:transform 10ms;
+        z-index:99999;
+        background:#8B17D2;
+        color:white;
+        border:0.2em solid white;
+        border-right:none;
+        box-shadow:0 0 0 0.1em #8B17D2,2px 2px 5px 0.1em rgba(0,0,0,0.5)
+    }
+}
+
+
+
+
     
 #quick-exit a{color:white}
 

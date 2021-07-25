@@ -5,7 +5,7 @@ export default function Home({passwordProvided,setPasswordProvided}){
         <div className="col-xl-12" style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
             <img style={{height:'15em', width:'100%'}}  src={'images/logo-purple-no-back.svg'}></img>
         </div>
-        <div className='col-xl-12' style={{display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column'}}>
+        <div className='col-xl-12'>
             <h2>We Believe</h2>
             <p>Embolden: To give someone courage or confidence, to instil boldness courage or resolution enough to overcome timidity or misgiving.</p>
             <p>Emboldener: Someone who emboldens.</p>

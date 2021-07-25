@@ -18,6 +18,7 @@ export default function HowYouCanHelp({passwordProvided,setPasswordProvided}){
 Spread the word about Embolden by telling your female friends, family and co-workers about Embolden. Especially those you suspect are suffering from domestic abuse. Remember that not everyone speaks openly about domestic abuse and so there is benefit in spreading awareness to all women. 
 Please remember that to keep women, children and staff and volunteers safe, it’s really important that we spread awareness carefully and keep Embolden’s location as discrete as possible. 
 For this reason, we do not have any social media and this website is password protected.</p>
+            <img style={{width:'100%'}} src="/images/hands.png"></img>
         </div>
     </>, title), title, passwordProvided, setPasswordProvided)
 }
