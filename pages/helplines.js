@@ -40,7 +40,7 @@ export default function HelpLines({passwordProvided,setPasswordProvided}){
             otherDetails:<div>Helpline open Mon - Fri 9.00am - 5.00pm</div>
         }, 
         {
-            title:'Galop (LGBT)', 
+            title:'Galop (LGBT+)', 
             website:'www.galop.org.uk',
             telephone: '0800 999 5428',
             email: 'help@galop.org.uk', 

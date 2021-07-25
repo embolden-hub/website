@@ -1,5 +1,6 @@
 import Layout from '../components/layout';
 import MainSection from '../components/mainSection';
+import Link from 'next/link';
 
 export default function FAQS({passwordProvided,setPasswordProvided}){
     const sections = [
@@ -107,12 +108,15 @@ export default function FAQS({passwordProvided,setPasswordProvided}){
             key:'10',
             content:
                 <div>
-                    <p>If you have not been seen at a hospital or doctors or otherwise reported your injuries, you can fill out an incident form that we can store safely. With this, you can document what, when, where, how and any other details that you remember that may prove important if you report domestic violence. For this, we will need to take your details so that we can identify which form belongs to whom.</p>
-                    <p>In the near future we may introduce a service where, with your consent, you can have injuries or marks photographed, documented and held securely. For now, if you would like some guidance on how to best capture and store photos, we can guide you on this.</p>
+                    <p>You can document your injuries, and sometimes, damage to property, at Embolden. Your file will be stored safely for up to 5 years. Please visit Embolden or email us for more information.</p>
+                    <p>We are currently planning the introduction of our POP Programme ('Power of Photography') which will extend this to include digital photography for those who are in two minds about reporting domestic violence.</p> 
+                    <p>You can also fill in an online record of injuries at the following form: <Link href='https://forms.office.com/r/pr19rLrdPs'><a>https://forms.office.com/r/pr19rLrdPs</a></Link> or scan the below QR code:</p>
+                    <img style={{width:'200px', height:'200px'}} src='/images/form.png'/>
+
                 </div>
         },
         {
-            title:'I have a dyslexia or another reading disorder',
+            title:'I have dyslexia or another reading disorder',
             key:'11',
             content:
                 <div>
@@ -146,7 +150,7 @@ export default function FAQS({passwordProvided,setPasswordProvided}){
             key:'14',
             content:
                 <div>
-                    Please see our ‘Helplines and Chat’ page. <b>Remember in an emergency, dial 999.</b>
+                    Please see our ‘Helplines' page. <b>Remember in an emergency, dial 999.</b>
                 </div>
             
         }, 

@@ -7,13 +7,11 @@ export default function SafeBrowsing({passwordProvided,setPasswordProvided}){
             <p>Please take a look at the below tips on how to safely browse this and other sites of this nature</p>
                 <h3>Passwords</h3>
                 <ol>
-                    <li>The first page you see will say ‘Embolden’ only. This is to let you know that you have reached the correct page. It will not be clear from this which site you are entering.</li>
                     <li>You will need a password to enter our site. If you are reading this you will have already entered it. You will need to enter this same password once again to open the ‘Find Us’ page to view our location.</li>
                     <li>From the search history page, you would have to re-enter the password when clicking on the site.</li>
                     <li>If we believe this password has been compromised, we will have to change this password. In this case, we will do our best to inform everyone that we can safely contact of this change. For security reasons, it will not be able to do this via email if you are a service user.</li>  
                     <li>If we have to change our site password, this will be displayed on our newest posters and all local agencies and services will be made aware of this change.</li>
                     <li>If you have forgotten the password or we have changed our password and you are unaware of it, you can visit Embolden to ask a member of library staff for the new one. The password will be displayed in our hub room too.</li>
-                    <li>Please avoid writing this password down or giving it out to anyone. You may share it with female members of your family, friends and co-workers though.</li>
                 </ol>
                 <h3>Quick Exit</h3>
                 <ol>

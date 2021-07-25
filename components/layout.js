@@ -2,7 +2,8 @@ import Link from 'next/link';
 import Head from 'next/head';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faLaughWink } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+
 
 const hashCode = function(s) {
     var h = 0, l = s.length, i = 0;
@@ -10,30 +11,29 @@ const hashCode = function(s) {
       while (i < l)
         h = (h << 5) - h + s.charCodeAt(i++) | 0;
     return h;
-  };
+};
+
+
 
 export default function Layout(contents, title, passwordProvided, setPasswordProvided){
     const [password, setPassword] = useState(undefined);
     const check = () => password !== undefined ? setPasswordProvided(hashCode(password) === 1516355) : null;
-    
+
     const links = [
-        {title:'Home', page:'/', protected:true},
-        {title:'Contact', page:'/contact-us',protected:true},
-        {title:'Find Us', page:'/where-to-find-us', protected:true},
-        {title:'FAQs', page:'/faqs', protected:true},
-        {title:'Explore Options', page:'/explore-options', protected:true},
-        {title:'Claires Law', page:'/claires-law', protected:true},
-        {title:'Calls For Help', page:'/calls-for-help', protected:true}, 
-        {title:'Safety Resources', page:'/safety-resources', protected:true}, 
-        {title:'Helplines', page:'/helplines', protected:false}
+        {type:'header', title:'Home', page:'/', protected:true},
+        {type:'header', title:'Contact', page:'/contact-us',protected:true},
+        {type:'header', title:'Find Us', page:'/where-to-find-us', protected:true},
+        {type:'header', title:'FAQs', page:'/faqs', protected:true},
+        {type:'header', title:'Explore Options', page:'/explore-options', protected:true},
+        {type:'header', title:'Claires Law', page:'/claires-law', protected:true},
+        {type:'header', title:'Calls For Help', page:'/calls-for-help', protected:true}, 
+        {type:'header', title:'Safety Resources', page:'/safety-resources', protected:true}, 
+        {type:'header', title:'Helplines', page:'/helplines', protected:false},
+        {type:'footer', title:'Privacy Policy', page:'/privacy-policy', protected:false},
+        {type:'footer', title:'Safe Browsing', page: '/safe-browsing', protected:true}, 
     ]
 
     const currentLink = links.find(link => link.title === title);
-
-    const footerLinks = [
-        {title:'Privacy Policy', page:'/privacy-policy'},
-        {title:'Safe Browsing', page: '/safe-browsing'}, 
-    ]
 
     const renderQuickExit = () =>{
         return <div id="quick-exit">
@@ -62,7 +62,7 @@ export default function Layout(contents, title, passwordProvided, setPasswordPro
             </button>
             <div className="collapse navbar-collapse" id="navbarCollapse">
               <ul className="navbar-nav me-auto mb-2 mb-md-0">
-                  {links.filter(link => passwordProvided || !link.protected).map(link => <li key={link.title} className="nav-item">
+                  {links.filter(link => link.type ==='header' && (passwordProvided || !link.protected)).map(link => <li key={link.title} className="nav-item">
                     <Link href={link.page}>
                         <a className="nav-link active">{link.title}</a>
                     </Link>
@@ -77,7 +77,6 @@ export default function Layout(contents, title, passwordProvided, setPasswordPro
                         How you can help</a>           
                 </Link>
               </div>
-            
             </div>
           </div>
         </nav>
@@ -90,7 +89,7 @@ export default function Layout(contents, title, passwordProvided, setPasswordPro
                     <div className="container">
                         <div className="site-footer__top">
                             <div className="row">
-                                {footerLinks.map(link => <div className={'col-xl-3 col-lg-6 col-md-6'}>
+                                {links.filter(link => link.type ==='footer' && (passwordProvided || !link.protected)).map(link => <div className={'col-xl-3 col-lg-6 col-md-6'}>
                                     <Link href={link.page}>
                                         <div className='footer-widget__text'>{link.title}</div>
                                     </Link>
@@ -113,7 +112,6 @@ export default function Layout(contents, title, passwordProvided, setPasswordPro
             </footer>
     }
 
-
     const handleKeyDown = (e)  => {
         if (e.key === 'Enter') {check()}
     }
@@ -133,7 +131,7 @@ export default function Layout(contents, title, passwordProvided, setPasswordPro
                         placeholder="Password" 
                         onKeyDown={handleKeyDown}
                         onChange={evt => setPassword(evt.target.value)}/>
-                        <a onClick={check} className="thm-btn"><i className="fas fa-arrow-circle-right"></i>Submit</a>
+                        <a onClick={check} className="thm-btn">Submit</a>
                     </div>
               </div>
     }
@@ -151,10 +149,11 @@ export default function Layout(contents, title, passwordProvided, setPasswordPro
         {renderHeader()}
         <main className="flex-shrink-0" style={{margin:'65px 0'}}>
             <div className="container" style={{padding: '70px 0 100px'}}>
-                {(currentLink && !currentLink.protected) || passwordProvided ? contents : enterPassword()}
+                {currentLink === undefined || !currentLink.protected || passwordProvided ? contents : enterPassword()}
             </div>
         </main>
         {renderFooter()}
     </div>
     </>
+
 }
