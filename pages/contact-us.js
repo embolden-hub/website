@@ -5,8 +5,8 @@ export default function ContactUs({passwordProvided,setPasswordProvided}){
     const title = 'Contact'
 
     return Layout(MainSection(<div className='row'>
-        <div className={'col-xl-12'}>
-        <p>Please fill in the contact form below, or email us directly via email. We respond to emails between 9am-6pm Mon-Fri.</p>
+        <div className={'col-xl-6'}>
+        <p>Please fill in the contact, or email us directly via email. We respond to emails between 9am-6pm Mon-Fri.</p>
         <p>If you would prefer to call a helpline you can visit our hub or see our helplines page.</p>
         <p>When you contact us, let us know:</p>
         <ul>
@@ -28,7 +28,7 @@ export default function ContactUs({passwordProvided,setPasswordProvided}){
             </li>
         </ul>
         </div> 
-        <div className="col-xl-12">
+        <div className="col-xl-6">
         <div className="contact-page__form">
             <form action="https://mailthis.to/Embolden-Hub" encType="multipart/form-data" method="POST"  className="contact-page__main-form contact-form-validated">
                 <div className="row">
@@ -54,7 +54,7 @@ export default function ContactUs({passwordProvided,setPasswordProvided}){
                                 <input type="hidden" name="_after" value="https://embolden-hub.org.uk/confirm-email-sent"/>
                                 <input type="hidden" name="_honeypot" value=""/>
                                 <input type="hidden" name="_confirmation" value=""/>
-                                <button type="submit" className="thm-btn contact-page__btn"><i className="fas fa-arrow-circle-right"></i>Send a Message</button>
+                                <button type="submit" className="thm-btn contact-page__btn">Send a Message</button>
                             </div>
                         </div>
                     </form>

@@ -99,7 +99,7 @@ export default function HelpLines({passwordProvided,setPasswordProvided}){
                     <div className="col-xl-4">
                         {key}
                     </div>
-                    <div className="col-xl-8">
+                    <div className="col-xl-8" style={{textAlign:'end'}}>
                         <h5 style={{fontWeight:'bold'}}><a href={getHref()}>{value}</a></h5>
                     </div>
               </div>
@@ -112,12 +112,12 @@ export default function HelpLines({passwordProvided,setPasswordProvided}){
                     <div className="event-details__right-sidebar-title">
                         <h4>{item.title}</h4>
                     </div>
-                    <ul className="event-details__right-sidebar-list list-unstyled">
+                    <ul className="event-details__right-sidebar-list list-unstyled" style={{flex:'1 1 auto'}}>
                         {item.website ? renderItem('Website', item.website) : null}
                         {item.email ? renderItem('Email', item.email) : null}
                         {item.telephone ? renderItem('Telephone', item.telephone) : null}
                     </ul>
-                    {item.otherDetails ? <p>{item.otherDetails}</p> : <></> }
+                    {item.otherDetails ? <div>{item.otherDetails}</div> : <></> }
             </div>
        </div>
        
