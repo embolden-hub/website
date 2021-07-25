@@ -19,7 +19,7 @@
 # Common
 --------------------------------------------------------------*/
 :root {
-    --thm-font: 'Nunito', sans-serif;
+    --thm-font: 'Open Sans', sans-serif;
     --thm-reey-font: 'reeyregular';
     --thm-gray: #707876;
     --thm-gray-rgb: 112, 120, 118;
@@ -39,10 +39,8 @@
 
 body {
     font-family: var(--thm-font);
-    color: var(--thm-gray);
     font-size: 18px;
     line-height: 30px;
-    font-weight: 700;
 }
 
 body.locked {

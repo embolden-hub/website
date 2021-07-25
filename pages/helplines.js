@@ -30,7 +30,7 @@ export default function HelpLines({passwordProvided,setPasswordProvided}){
         {
             title:'Forced Marriage Unit', 
             telephone: '0207 008 0151',
-            emai:'fmu@fco.gov.uk'
+            email:'fmu@fco.gov.uk'
         },
         {
             title:'Karma Nirvana (Supporting those worried about honour based abuse and forced marriage)', 

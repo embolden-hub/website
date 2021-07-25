@@ -7,7 +7,8 @@ export default function WhereToFindUs({passwordProvided,setPasswordProvided}){
     return Layout(MainSection(<div className='col-xl-12'>
         <div className='row'>
             <div className='col-xl-6'>
-                <p>Embolden Support Hub is located at Winslow Community Library. The address is as follows:</p>
+                <p>Embolden Support Hub is located at Winslow Community Library. <br/> The address is as follows:</p>
+            
                 <Link href="https://www.buckscc.gov.uk/services/libraries/find-a-library/winslow/">Winslow Community Library</Link><br/>
                 Park Rd<br/>
                 Winslow<br/>
