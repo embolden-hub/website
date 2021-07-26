@@ -11,6 +11,7 @@ export default function HowYouCanHelp({passwordProvided,setPasswordProvided}){
             <p>If you would like to volunteer with Embolden, please contact support@embolden-hub.org.uk and mark the email as “Volunteering”. We can let you know of any roles available and provide you with an application form. We especially welcome applications from those with experience in similar work roles. </p>
             <b style={{width:'100%', display:'flex', justifyContent:'center'}}> Gifting </b>
             <p>We have an Amazon Wishlist that is updated regularly. We like this way of donating as it puts the power in your hands and gives you the chance to donate knowing exactly how it will help.</p>  
+            <p>To select somthing from the Wishlist please follow this link: <Link href="https://www.amazon.co.uk/hz/wishlist/ls/3BU2S9YX2NVUZ"><a><b>Link</b></a></Link></p>
             <b style={{width:'100%', display:'flex', justifyContent:'center'}}> Grants </b>
             <p>We rely solely on donations. If you would like to hear more or have a chat with the intention of giving us a grant we would (of course!) be more than happy to receive an email at support@embolden-hub.org.uk.</p> 
             <b style={{width:'100%', display:'flex', justifyContent:'center'}}> Awareness </b>

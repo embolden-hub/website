@@ -26,6 +26,7 @@ export default function Home({passwordProvided,setPasswordProvided}){
                 We believe that if you don’t get a problem from its roots, it will continue to grow. We empathise with the struggle that women have endured from patriarchy, sexism and male violence toward women and girls.<br/>
                 We strive to make a difference on a local level and will be implementing a plan in the near future, starting at the roots.
             </p>
+            <img style={{width:'100%', margin:'auto'}} src="images/Anyone_victim.jpeg"></img>
         </div>
     </div>, 'Home', passwordProvided, setPasswordProvided)
 }

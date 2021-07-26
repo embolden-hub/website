@@ -33,6 +33,7 @@ export default function FAQS({passwordProvided,setPasswordProvided}){
             <div>
                <p>Yes, children are more than welcome under your supervision. We also have a small range of books on domestic abuse for children that you may read together should you wish to. 
                   Our soft Koala bear Cuddles and her little joey are always happy to have friends over to play. </p>
+                <img style={{margin:'20px', width:'300px', height:'300px'}} src="/images/CUDDLES.jpeg"/>
             </div>
         }, 
         {

@@ -12,5 +12,6 @@ export default function ExploreOptions({passwordProvided,setPasswordProvided}){
     <p>You may simply want to have a cup of tea or coffee and reflect on your options. We know this can be overwhelming.</p>
     <p>If you would like to use one of the library computers, please complete your library membership at the library desk.</p> 
     <b>We know that not everybody likes to speak with the police, but should you wish to speak with them, Embolden is a safe and discrete place to do it. If you would like to be accompanied by an Emboldener please ask and this can be arranged.</b>
+    <img style={{width:'100%', margin:'auto'}} src="images/WOMENS_RIGHTS.jpeg"></img>
     </div>, title), title,  passwordProvided, setPasswordProvided)
 }
