@@ -1,5 +1,6 @@
 import Layout from '../components/layout';
 import MainSection from '../components/mainSection';
+import Link from 'next/link';
 
 export default function HowYouCanHelp({passwordProvided,setPasswordProvided}){
     const title = 'How Can You Help'; 
