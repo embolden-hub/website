@@ -84,7 +84,7 @@ export default function HelpLines({passwordProvided,setPasswordProvided}){
         },
         {
             title:' LIZ GOUGH – ENCOUNTER COMPASSION',
-            website: 'ww.encountercompassion.org',
+            website: 'www.encountercompassion.org',
             otherDetails:<div>
                   Former midwife, and now counsellor and psychotherapist experienced in trauma, sexual assault, abuse, modern slavery and other areas
             </div>
