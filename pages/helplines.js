@@ -5,20 +5,20 @@ export default function HelpLines({passwordProvided,setPasswordProvided}){
     const contacts = [
         {
             title:'Aylesbury Women’s Aid', 
-            website:'www.aylesburywomensaid.org.uk',
+            website:'https://www.aylesburywomensaid.org.uk',
             telephone: '01296437777',
             email: 'helpline@womensaid.org.uk', 
             otherDetails:<div>Helpine open 10am - 4pm, Monday to Friday except bank holidays</div>
         }, 
         {
             title:'Refuge', 
-            website:'www.refuge.org.uk',
+            website:'https://www.refuge.org.uk',
             telephone: '08082000247',
             otherDetails:<div>Online chat and contact form available</div>
         },
         {
             title:'Victims First',
-            website:'www.victimsfirst.org.uk',
+            website:'https://www.victimsfirst.org.uk',
             telephone:'03001234148', 
         },
         {
@@ -34,20 +34,20 @@ export default function HelpLines({passwordProvided,setPasswordProvided}){
         },
         {
             title:'Karma Nirvana (Supporting those worried about honour based abuse and forced marriage)', 
-            website:'www.karmanirvana.org.uk',
+            website:'https://www.karmanirvana.org.uk',
             telephone: '0800 5999 247',
             email: 'helpline@womensaid.org.uk', 
             otherDetails:<div>Helpline open Mon - Fri 9.00am - 5.00pm</div>
         }, 
         {
             title:'Galop (LGBT+)', 
-            website:'www.galop.org.uk',
+            website:'https://www.galop.org.uk',
             telephone: '0800 999 5428',
             email: 'help@galop.org.uk', 
         }, 
         {
             title:'Opoka (Polish women)', 
-            website:'www.opoka.org.uk',
+            website:'https://www.opoka.org.uk',
             telephone: '0300 365 1700',
             email: 'helpline.opoka@gmail.com', 
         },
@@ -84,7 +84,7 @@ export default function HelpLines({passwordProvided,setPasswordProvided}){
         },
         {
             title:' LIZ GOUGH – ENCOUNTER COMPASSION',
-            website: 'www.encountercompassion.org',
+            website: 'https://www.encountercompassion.org',
             otherDetails:<div>
                   Former midwife, and now counsellor and psychotherapist experienced in trauma, sexual assault, abuse, modern slavery and other areas
             </div>
@@ -96,10 +96,10 @@ export default function HelpLines({passwordProvided,setPasswordProvided}){
     const renderItem = (key, value) => { 
         const getHref = () => key === 'Email' ? `mailto:${value}`: key === 'Telephone' ? `tel:${value}` : value;
         return <div className={'row'}>
-                    <div className="col-xl-4">
+                    <div className="col-xl-3">
                         {key}
                     </div>
-                    <div className="col-xl-8" style={{textAlign:'end'}}>
+                    <div className="col-xl-9" style={{textAlign:'end'}}>
                         <h5 style={{fontWeight:'bold'}}><a href={getHref()}>{value}</a></h5>
                     </div>
               </div>
