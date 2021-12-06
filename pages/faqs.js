@@ -9,10 +9,9 @@ export default function FAQS({passwordProvided,setPasswordProvided}){
             key:'1', 
             content:
             <div>
-                <p>Embolden is a code-word scheme which means that when you arrive at the library you should try to ask a member of staff for ‘Eden’.</p>
-                <p>This will give you the privacy of being able to ask for help without other library members aware.</p>
+                <p>Embolden is a code-word scheme which means that when you arrive at the library you can ask a member of staff for ‘Eden’. This will allow you to enter discretely.</p> 
+                <p>Please note, if you have booked in with an Emboldener, they will keep an eye out for you at the time you have agreed and will give you further details on how to find Embolden.</p> 
                 <p>Keeping the location discrete helps to protect you and keep you safe as well as other women, children, staff and volunteers.</p>
-                <p>If you forget though, you can just ask for our hub or support hub.</p>
                 <p>Although the library staff and volunteers do not represent Embolden, they are a key part of Embolden and will happily show you to our hub.</p>
             </div>
         },
@@ -21,9 +20,9 @@ export default function FAQS({passwordProvided,setPasswordProvided}){
             key:'2',
             content:
             <div>
-                <p>If we could have any super-power (besides ending violence against women and girls once and for all!) it would definitely be to double in size!</p>
-                <p>Our main hub room is a bit of a squeeze, so is only big enough for one survivor at a time. Luckily, we can show you to a second room if this room is occupied. It won’t be quite as ‘Embolden’ but you’ll still have access to all the same resources.</p>
-                <p>If our hub is engaged, or both rooms engaged, you may also choose to use a computer or take one of our phones outside to the courtyard or off-site. We believe in choices!</p>
+                <p>We are a quiet service and are yet to have this happen so it is unlikely. Our sessions are predominantly booked in advance.</p>
+                <p>However, if we could have any super-power (besides ending violence against women and girls once and for all!) it would definitely be to double in size!</p>
+                <p>We plan for unlikely though- if our main room is occupied, we can show you to a second safe space where you’ll have access to all of the same resources. You could also choose to use a computer or borrow one of our hub phones. We believe in choices!</p>
             </div>
         }, 
         {
@@ -77,11 +76,8 @@ export default function FAQS({passwordProvided,setPasswordProvided}){
             key:'7',
             content:
             <div>
-                <p>There will always be a member of staff or volunteer from the library to show you to the hub.</p>
-                <p>Unfortunately, there will be times when our hub is un-womaned for now and so make yourself at home in our hub (you can have a tea, coffee or a cold drink!).</p>
-                <p>If you are feeling anxious, stressed or nervous why not try out something from our basket of fidget toys?</p>
-                <p>If you would like to have a chat in person, we recommend emailing ahead of your visit to support@embolden-hub.org.uk so we can arrange a suitable time with you. You can do this on one of the library computers if you need to. Please see the ‘Contact Us’ page for how to contact us safely.</p>
-                <p>If you would like to bring one friend or family member (women only please) you are welcome to do so.</p>
+                <p>We ask that you book a time with an Emboldener in advance if you would like in-person support. You can do this by emailing us at support@embolden-hub.org.uk. If we have no bookings, there may be times when our hub is un-womaned due to being a small voluntary service. We will still be able to offer a support call in most cases, and will accommodate last minute bookings where possible.</p>
+                <p>If you have not booked and need to make a last minute, urgent call (non-emergency only) to 101 or a domestic abuse organisation, please visit our hub where you’ll find one of our Embolden phones. This can be used even when an Emboldener is not present.</p>
             </div>
         },
         {
@@ -164,6 +160,25 @@ export default function FAQS({passwordProvided,setPasswordProvided}){
 The website is password protected to prevent identifying details about our location being leaked to perpetrators. If we need to change this password in the future, please visit the library and any member of staff will be able to give you the new password. 
                    </p>
                 </div>
+        },
+        {
+            title:'Do you have internet access at Embolden?',
+            key:'16',
+            content:
+                <div>
+                    <p>Besides the computer area for library members just outside of our Embolden room, we now have a laptop free to use for those visiting us. So if you would like to use an online chat service or other online resources you may do so!</p>
+                </div>
+        }, 
+        {
+            title:'What is your Support Call service?', 
+            key:'17',
+            content:
+                <div>
+                    <p>We are now offering a support call service for women that may be hesitant about visiting us in person or unable to do so.</p>
+                    <p>To book a support call, please book through support@embolden-hub.org.uk.</p>
+                    <p>We will listen to you and your feelings and discuss your options. Please note, it is not a counselling service as we are not counsellors.</p>  
+                    <p>If you would like to come in and see us after speaking with us by phone, we can book you in.</p>
+               </div>
         }
     ]
 
