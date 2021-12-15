@@ -25,10 +25,11 @@ export default function Layout(contents, title, passwordProvided, setPasswordPro
         {type:'header', title:'Find Us', page:'/where-to-find-us', protected:true},
         {type:'header', title:'FAQs', page:'/faqs', protected:true},
         {type:'header', title:'Explore Options', page:'/explore-options', protected:true},
+	{type:'header', title:'Power of Photography (POP)', page:'/power-of-photography', protected:true},      
         {type:'header', title:'Claires Law', page:'/claires-law', protected:true},
         {type:'header', title:'Calls For Help', page:'/calls-for-help', protected:true}, 
         {type:'header', title:'Safety Resources', page:'/safety-resources', protected:true}, 
-        {type:'header', title:'Helplines', page:'/helplines', protected:false},
+        {type:'header', title:'Helplines', page:'/helplines', protected:false},  
         {type:'footer', title:'Privacy Policy', page:'/privacy-policy', protected:false},
         {type:'footer', title:'Safe Browsing', page: '/safe-browsing', protected:true}, 
     ]
